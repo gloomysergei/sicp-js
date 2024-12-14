@@ -20,4 +20,8 @@ import {
   reduce,
   toString as htmlToString,
   getValue,
+  node,
 } from "@hexlet/html-tags"; /* eslint-enable */
+
+const select = (tag, html) => {};
+export default select;
