@@ -1,3 +1,5 @@
+/* eslint-disable comma-dangle */
+/* eslint-disable quotes */
 // @ts-check
 
 import { cons, car, cdr, toString as pairToString } from "@hexlet/pairs"; // eslint-disable-line

@@ -1,9 +1,10 @@
+/* eslint-disable quotes */
 // @ts-check
 
 import { cons, car, toString as pairToString } from "@hexlet/pairs";
 import { l, length, get } from "@hexlet/pairs-data";
-import make from "../project/game.js";
 import { describe, it, expect } from "@jest/globals";
+import make from "../project/game.js";
 
 describe("CardGame", () => {
   it("should work 1", () => {

@@ -1,9 +1,10 @@
+/* eslint-disable quotes */
 // @ts-check
 
 import { cons, car, toString as pairToString } from "@hexlet/pairs";
 import { l, length, get } from "@hexlet/pairs-data";
+import { expect, test } from "@jest/globals";
 import make from "../project/game.js";
-import { describe, it, expect, test } from "@jest/globals";
 
 const cards = l(
   cons("Костяная кочерга гробницы", () => 7),

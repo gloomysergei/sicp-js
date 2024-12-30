@@ -1,5 +1,5 @@
 {
-  "name": "sicp-js",
+  "name": "sicp",
   "version": "0.0.1",
   "description": "learning sicp based on js",
   "bin": {
@@ -24,6 +24,7 @@
   "homepage": "https://github.com/gloomysergei/sicp-js.git#readme",
   "dependencies": {
     "@hexlet/html-tags": "^1.0.2",
+    "@hexlet/pairs": "^1.1.1",
     "@hexlet/pairs-data": "^1.1.1",
     "debug": "^4.3.1",
     "lodash": "^4.17.21"
