@@ -3,25 +3,19 @@
 // @ts-check
 
 import { cons, car, cdr, toString as pairToString } from "@hexlet/pairs"; // eslint-disable-line
-import {
-  cons as consList,
-  l,
-  random,
-  head,
-  reverse,
-  toString as listToString,
-} from "@hexlet/pairs-data"; // eslint-disable-line
+import { cons as consList, l, random, head, reverse } from "@hexlet/pairs-data"; // eslint-disable-line
 
 const run = (player1, player2, cards, customRandom) => {
   const iter = (health1, name1, health2, name2, order, log) => {
     if (health1 <= 0) {
+      // возврат лога по окончанию игры
       return consList(cons(car(head(log)), `${name1} был убит`), log);
     }
     // BEGIN (write your solution here)
-
+    const card = customRandom(cards);
     // END
-    const cardName = car(cards);
-    const damage = cdr(cards)(health2);
+    const cardName = car(card);
+    const damage = cdr(card)(health2);
     const newHealth = health2 - damage;
 
     const message = `Игрок '${name1}' применил '${cardName}'
@@ -44,5 +38,8 @@ const run = (player1, player2, cards, customRandom) => {
 };
 
 // BEGIN (write your solution here)
-
+export default (cards, customRandom = random) => {
+  const inner = (name1, name2) => run(name1, name2, cards, customRandom);
+  return inner;
+};
 // END

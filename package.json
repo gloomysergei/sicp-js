@@ -26,6 +26,7 @@
     "@hexlet/html-tags": "^1.0.2",
     "@hexlet/pairs": "^1.1.1",
     "@hexlet/pairs-data": "^1.1.1",
+    "@hexlet/tagged-types": "^1.1.1",
     "debug": "^4.3.1",
     "lodash": "^4.17.21"
   },

@@ -18,7 +18,6 @@ const run = (player1, player2, cards) => {
     if (health1 <= 0) {
       const element = cons(car(head(log)), `${name1} был убит`); // очень хитро
       const result = consList(element, log);
-      console.log(listToString(result));
       return result;
     }
     const card = random(cards); // получили карту
