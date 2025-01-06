@@ -1,3 +1,4 @@
+/* eslint-disable comma-dangle */
 /* eslint-disable quotes */
 import { car, toString as pairToString } from "@hexlet/pairs";
 import { l, length, get } from "@hexlet/pairs-data";

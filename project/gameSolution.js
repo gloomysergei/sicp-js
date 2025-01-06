@@ -31,7 +31,6 @@ const run = (player1, player2, cards, customRandom) => {
       return consList(cons(car(head(log)), `${name1} был убит`), log);
     }
     const card = customRandom(cards);
-
     let cardName;
     let damage;
 
@@ -40,14 +39,8 @@ const run = (player1, player2, cards, customRandom) => {
       damage = simpleCardDamage(card);
     } else if (isPercentCard(card)) {
       cardName = getPercentCardName(card);
-      damage = percentCardDamage(card);
+      damage = percentCardDamage(card, health2);
     }
-
-    // Populate cardName and damage using suitable card
-    // use imports from  percentCard.js and simpleCard.js
-    // BEGIN (write your solution here)
-    // END
-
     const newHealth = health2 - damage;
 
     const message = `Игрок '${name1}' применил '${cardName}'
